@@ -104,7 +104,7 @@ function generatePDF() {
   chartData.forEach((point, index) => {
     const formattedHour = formatHour(point.x);
     const formattedDay = formatDay(point.x);
-    pdf.text(`Día ${formattedDay}: Hora=${formattedHour}, Y=${point.y}`, 20, 50 + index * 10);
+    pdf.text(`Día ${formattedDay}: Hora=${formattedHour}, Humedad=${point.y}`, 20, 50 + index * 10);
   });
 
   // Guarda el PDF (puedes ajustar el nombre del archivo según tus necesidades)
@@ -112,3 +112,4 @@ function generatePDF() {
   pdf.save('reporte.pdf');
   console.log("no puedo");
 }
+

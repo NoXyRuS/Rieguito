@@ -15,7 +15,7 @@ function createsensorChart() {
       type: 'spline'
     },
     series: [{
-      name: 'BME280'
+      name: 'Sensor'
     }],
     title: {
       text: undefined
